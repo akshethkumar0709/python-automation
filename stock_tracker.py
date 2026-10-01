@@ -17,8 +17,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 # TELEGRAM SETTINGS
 # ============================================================
 
-BOT_TOKEN = "8752288484:AAEASSBGOBjxEbIGOOo1jRu7t9S88s4FVzs"
-CHAT_ID = "7115320700"
+import os
+
+BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 
 # ============================================================
